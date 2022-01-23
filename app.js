@@ -1,15 +1,17 @@
-var person = {
-    //     name: string;
-    //     age: number;
-    // }= {
-    name: 'KWJ',
-    age: 27,
-    hobbies: ['Sports', 'Cooking']
-};
-var favoriteActivities;
-favoriteActivities = ['Sports'];
-console.log(person.name);
-for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
-    var hobby = _a[_i];
-    console.log(hobby.toUpperCase());
+function addString(n1, n2) {
+    return (n1 + n2).toString();
 }
+console.log(add(1, 2));
+function add(n1, n2) {
+    return n1 + n2;
+}
+function printResult(num) {
+    console.log('Result: ' + num);
+    return null;
+}
+printResult(add(1, 2));
+console.log(printResult(add(1, 2)));
+var combinedValues;
+combinedValues = add;
+combinedValues = 5;
+console.log(combinedValues(1, 2));
